@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aPv00mTqOtW1KiYVkh5aU3HXmNxlXoSXVXpx9SIT9iUE2ro7s8c1L5Kg5LovCaAuDBia0QBEfFHFYtuscz1X0g==",
+  "dgSpecHash": "rjOPXjlK9iAcNuCplmDQBq0VblmVC5nHuTVpCGCGPEIOxIF83nrFuNX1JLfBUw9K7a5a1ArkJuvmHY7LLQfx1Q==",
   "success": true,
-  "projectFilePath": "c:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj",
+  "projectFilePath": "C:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Emiliano\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Emiliano\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
