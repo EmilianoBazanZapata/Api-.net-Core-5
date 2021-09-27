@@ -39,7 +39,7 @@ namespace Api
             
             //agregando el Repositorio
             services.AddScoped<IClienteRepositorio , ClienteRepositorio>();
-
+            services.AddScoped<IUserRepositorio,UserReposirtorio>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
