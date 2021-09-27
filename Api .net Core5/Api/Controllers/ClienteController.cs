@@ -6,6 +6,7 @@ using Api.Data;
 using Api.Modelos;
 using Api.Modelos.Dto;
 using Api.Repositorio;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ namespace Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class ClienteController : ControllerBase
     {
         //private readonly ApplicationDbContext _context;

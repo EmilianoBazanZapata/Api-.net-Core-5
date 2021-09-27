@@ -91,3 +91,7 @@ C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.
 C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.0\Scrutor.dll
+C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Emiliano\Desktop\Api\Api-.net-Core-5\Api .net Core5\Api\bin\Debug\net5.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
