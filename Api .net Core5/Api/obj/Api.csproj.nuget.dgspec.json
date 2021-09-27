@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj": {}
+    "c:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj": {
+    "c:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj",
+        "projectUniqueName": "c:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj",
+        "projectPath": "c:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\Api.csproj",
         "packagesPath": "C:\\Users\\Emiliano\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\obj\\",
+        "outputPath": "c:\\Users\\Emiliano\\Desktop\\Api\\Api-.net-Core-5\\Api .net Core5\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Emiliano\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,7 +21,6 @@
           "net5.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,6 +39,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[10.1.1, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[8.1.1, )"
+            },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.10, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.10, )"
@@ -57,6 +68,14 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[6.2.2, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[6.2.2, )"
             }
           },
           "imports": [
