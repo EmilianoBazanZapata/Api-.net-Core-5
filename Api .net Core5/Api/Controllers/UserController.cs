@@ -43,8 +43,26 @@ namespace Api.Controllers
                 _response.DisplayMessage = "error al crear el usuario";
                 return BadRequest(_response);
             }
-            _response.DisplayMessage = "usuartio creado exitosamente";
+            _response.DisplayMessage = "usuario creado exitosamente";
             return Ok(_response);
+        }
+        [HttpPost("Login")]
+        public async Task<ActionResult> Login(UserDto user)
+        {
+            var respuesta = await _user.Login(user.UserName, user.Password);
+            if (respuesta == "nouser")
+            {
+                _response.IsSucces = false;
+                _response.DisplayMessage = "el usuario no existe";
+                return BadRequest(_response);
+            }
+            if (respuesta == "wrongpassword")
+            {
+                _response.IsSucces = false;
+                _response.DisplayMessage = "password incorrecta";
+                return BadRequest(_response);
+            }
+            return Ok("usuario conectado");
         }
     }
 }

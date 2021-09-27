@@ -15,9 +15,23 @@ namespace Api.Repositorio
         {
             _context = context;
         }
-        public Task<string> Login(string UserName, string Password)
+        public async Task<string> Login(string UserName, string Password)
         {
-            throw new NotImplementedException();
+             var user = await _context.Users.FirstOrDefaultAsync(
+                x => x.UserName.ToLower().Equals(UserName.ToLower()));
+
+            if (user == null)
+            {
+                return "nouser";
+            }
+            else if(!VerificarPasswordHash(Password, user.PasswordHash, user.PasswordSalt))
+            {
+                return "wrongpassword";
+            }
+            else
+            {
+                return "ok";
+            }
         }
 
         public async Task<int> Register(User user, string password)
@@ -57,6 +71,21 @@ namespace Api.Repositorio
             {
                 passwordSalt = hmac.Key;
                 passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            }
+        }
+        public bool VerificarPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
+        {
+            using (var hmac = new System.Security.Cryptography.HMACSHA512(passwordSalt))
+            {
+                var computedHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                for (int i = 0; i < computedHash.Length; i++)
+                {
+                    if (computedHash[i] != passwordHash[i])
+                    {
+                        return false;
+                    }
+                }
+                return true;
             }
         }
     }
